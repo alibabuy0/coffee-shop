@@ -5,23 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Coffee Shop</title>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"/>
-  <style>
-    /* Додати просте CSS для виділення активної секції */
-    .menu-section { display: none; }
-    .active { display: block; }
-  </style>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
     <div class="container header-content">
-      <img src="logo.png" alt="Логотип" class="logo"/>
+      <img src="img/logo.png" alt="Логотип" class="logo"/>
       <nav>
         <ul class="nav-links">
           <li><a href="#" onclick="showSection('drinks')">Напої</a></li>
           <li><a href="#" onclick="showSection('desserts')">Десерти</a></li>
           <li><a href="#" onclick="showSection('croissants')">Круасани</a></li>
-          <li><a href="#" onclick="showSection('cart')">Кошик</a></li>
+          <li><a href="#" onclick="showSection('cart')">Корзина</a></li>
         </ul>
       </nav>
     </div>
@@ -33,52 +28,52 @@
       <h2>Напої</h2>
       <div class="menu-grid">
         <div class="card">
-          <img src="cappucino.png"/>
+          <img src="img/cappucino.png"/>
           <p>Капучино — 25₴</p>
           <button onclick="addToCart('Капучино', 25)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="Latte_art_3 1.png"/>
+          <img src="img/Latte_art_3 1.png"/>
           <p>Латте — 30₴</p>
           <button onclick="addToCart('Латте', 30)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="kofe-amerikano-v-domashnix-usoviyax 1.png"/>
+          <img src="img/kofe-amerikano-v-domashnix-usoviyax 1.png"/>
           <p>Американо — 20₴</p>
           <button onclick="addToCart('Американо', 20)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="araxisovyj-raf 1.png"/>
+          <img src="img/araxisovyj-raf 1.png"/>
           <p>Раф — 35₴</p>
           <button onclick="addToCart('Раф', 35)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="img_2971-1 1.png"/>
+          <img src="img/img_2971-1 1.png"/>
           <p>Айс Латте — 32₴</p>
           <button onclick="addToCart('Айс Латте', 32)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="7c664063ba5e6215cb3567de3330c187 1.png"/>
+          <img src="img/7c664063ba5e6215cb3567de3330c187 1.png"/>
           <p>Чай чорний — 15₴</p>
           <button onclick="addToCart('Чай чорний', 15)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="mokachino 2.png"/>
+          <img src="img/mokachino 2.png"/>
           <p>Мокачино — 28₴</p>
           <button onclick="addToCart('Мокачино', 28)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="kakao-na-molotsi 1.png"/>
+          <img src="img/kakao-na-molotsi 1.png"/>
           <p>Какао — 22₴</p>
           <button onclick="addToCart('Какао', 22)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="lungo-02c15c9 1.png"/>
+          <img src="img/lungo-02c15c9 1.png"/>
           <p>Лунго — 24₴</p>
           <button onclick="addToCart('Лунго', 24)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="shokolad-goryachiy_588x409x90_c 1.png"/>
+          <img src="img/shokolad-goryachiy_588x409x90_c 1.png"/>
           <p>Гарячий шоколад — 30₴</p>
           <button onclick="addToCart('Гарячий шоколад', 30)">Додати в корзину</button>
         </div>
@@ -90,52 +85,52 @@
       <h2>Десерти</h2>
       <div class="menu-grid">
         <div class="card">
-          <img src="shutterstock_2154067297_1668017816-scaled 1.png"/>
+          <img src="img/shutterstock_2154067297_1668017816-scaled 1.png"/>
           <p>Медовик — 45₴</p>
           <button onclick="addToCart('Медовик', 45)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="1200_0_1594640431-9859 1.png"/>
+          <img src="img/1200_0_1594640431-9859 1.png"/>
           <p>Наполеон — 47₴</p>
           <button onclick="addToCart('Наполеон', 47)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="1574697743-8382 1.png"/>
+          <img src="img/1574697743-8382 1.png"/>
           <p>Спартак — 50₴</p>
           <button onclick="addToCart('Спартак', 50)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="309498_waffle-cake-made-of-crispy-waffl_1_new_960x380_0 1.png"/>
+          <img src="img/309498_waffle-cake-made-of-crispy-waffl_1_new_960x380_0 1.png"/>
           <p>Вафельний торт — 42₴</p>
           <button onclick="addToCart('Вафельний торт', 42)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="b57ve3---c2000x1050x0sx214s-up--3fdbe9c66d842fac8a389104d687b807 1.png"/>
+          <img src="img/b57ve3---c2000x1050x0sx214s-up--3fdbe9c66d842fac8a389104d687b807 1.png"/>
           <p>Макарон — 20₴</p>
           <button onclick="addToCart('Макарон', 20)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="12-cake 1.png"/>
+          <img src="img/12-cake 1.png"/>
           <p>Чізкейк — 55₴</p>
           <button onclick="addToCart('Чізкейк', 55)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="shutterstock_2139465649_1664468404-scaled 1.png"/>
+          <img src="img/shutterstock_2139465649_1664468404-scaled 1.png"/>
           <p>Пудинг — 40₴</p>
           <button onclick="addToCart('Пудинг', 40)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="9 1.png"/>
+          <img src="img/9 1.png"/>
           <p>Raw — 50₴</p>
           <button onclick="addToCart('Raw', 50)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="39-removebg-preview 1.png"/>
+          <img src="img/39-removebg-preview 1.png"/>
           <p>Горішки — 35₴</p>
           <button onclick="addToCart('Горішки', 35)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="shokoladnye-eklery-6 1.png"/>
+          <img src="img/shokoladnye-eklery-6 1.png"/>
           <p>Еклер — 38₴</p>
           <button onclick="addToCart('Еклер', 38)">Додати в корзину</button>
         </div>
@@ -147,22 +142,22 @@
       <h2>Круасани</h2>
       <div class="menu-grid">
         <div class="card">
-          <img src="galytskyj 1.png"/>
+          <img src="img/galytskyj 1.png"/>
           <p>Галицький — 60₴</p>
           <button onclick="addToCart('Галицький', 60)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="z-tuentsem 1.png"/>
+          <img src="img/z-tuentsem 1.png"/>
           <p>З тунцем — 65₴</p>
           <button onclick="addToCart('З тунцем', 65)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="korolivskyj 1.png"/>
+          <img src="img/korolivskyj 1.png"/>
           <p>Королівський — 70₴</p>
           <button onclick="addToCart('Королівський', 70)">Додати в корзину</button>
         </div>
         <div class="card">
-          <img src="lvivskyj 1.png"/>
+          <img src="img/lvivskyj 1.png"/>
           <p>Львівський — 68₴</p>
           <button onclick="addToCart('Львівський', 68)">Додати в корзину</button>
         </div>
